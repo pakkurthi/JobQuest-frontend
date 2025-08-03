@@ -1,0 +1,123 @@
+
+.homepage-wrapper {
+  background-color: #f4f7f6;
+  min-height: 100vh;
+}
+
+.interactive-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #66dfea 0%, #764ba2 100%);
+  color: white;
+  min-height: 60vh;
+}
+
+.interactive-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+.interactive-hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  animation: fadeInUp 1s ease-out 0.3s;
+  animation-fill-mode: both; 
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.main-search-bar {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  background: white;
+  border-radius: 50px;
+  padding: 0.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  animation: fadeInUp 1s ease-out 0.6s;
+  animation-fill-mode: both;
+}
+
+.main-search-bar input {
+  border: none;
+  background: transparent;
+  flex-grow: 1;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+}
+.main-search-bar input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.main-search-bar .btn {
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+}
+
+.category-section {
+  padding: 4rem 0;
+}
+
+.category-card {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 15px;
+  border: 1px solid #e0e5ec;
+  background: white;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #212529;
+  display: block;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  border-color: #6f42c1;
+}
+
+.category-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #6f42c1;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .icon {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.featured-jobs-section {
+  padding-bottom: 4rem;
+}
+
+.featured-job-card {
+  border-radius: 15px !important;
+  border: 1px solid #e9ecef !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.featured-job-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1) !important;
+}

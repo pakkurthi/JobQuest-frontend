@@ -1,0 +1,47 @@
+.application-card {
+  border-radius: 12px !important;
+  border: 1px solid #e9ecef !important;
+  border-left-width: 5px !important;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+}
+
+.application-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+}
+
+.status-APPLIED { border-left-color: #0dcaf0 !important; }
+.status-PENDING { border-left-color: #ffc107 !important; }
+.status-ACCEPTED { border-left-color: #198754 !important; }
+.status-REJECTED { border-left-color: #dc3545 !important; }
+.status-WITHDRAWN { border-left-color: #6c757d !important; background-color: #f8f9fa; }
+
+.job-title a {
+  font-weight: 600;
+  color: #212529;
+  text-decoration: none;
+}
+.job-title a:hover {
+  color: #0d6efd;
+}
+
+.status-badge {
+  font-weight: 500;
+  font-size: 0.75rem !important;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+}
+
+.cover-letter-container {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.application-card.status-WITHDRAWN .job-title a {
+  text-decoration: line-through;
+  color: #6c757d;
+}

@@ -1,0 +1,44 @@
+
+.application-tabs .nav-link {
+  font-weight: 500;
+  border-radius: 50px !important;
+  margin: 0 0.25rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.application-tabs .nav-link:hover {
+    background-color: #e9ecef;
+}
+
+.application-tabs .nav-link.active {
+  color: white !important;
+  background-color: #0d6efd !important;
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+}
+
+.application-card {
+  border-radius: 12px !important;
+  border: 1px solid #e9ecef !important;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+}
+
+.application-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+}
+
+.applicant-info {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.action-buttons .btn {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+}

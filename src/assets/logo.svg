@@ -1,0 +1,11 @@
+<svg width="150" height="40" viewBox="0 0 150 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- 
+    This is the SVG for your new logo. 
+    It consists of a briefcase icon and the text "JobPortal".
+    The classes are used for CSS animation.
+  -->
+  <g class="logo-icon-animation">
+    <path d="M35 12H5a3 3 0 00-3 3v18a3 3 0 003 3h30a3 3 0 003-3V15a3 3 0 00-3-3zM12 12V7a3 3 0 013-3h8a3 3 0 013 3v5" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="45" y="30" font-family="Verdana, sans-serif" font-size="24" font-weight="bold" fill="white" class="logo-text-animation">JobPortal</text>
+</svg>

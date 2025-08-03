@@ -1,0 +1,135 @@
+
+.jobs-header {
+  padding: 4rem 2rem;
+  margin-bottom: 2.5rem;
+  border-radius: 20px;
+  background: linear-gradient(-45deg, #007bff, #6f42c1, #20c997);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: white;
+  text-align: center;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.jobs-header h1 {
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.search-card {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  margin-bottom: 2.5rem;
+  background: #ffffff;
+}
+
+.search-card .form-control {
+  border-radius: 10px;
+  border: 1px solid #dee2e6;
+  padding: 0.75rem 1rem;
+}
+
+.search-card .btn-primary {
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  width: 100%;
+}
+
+.job-card-grid-item {
+  display: flex; 
+}
+
+.job-card {
+  width: 100%; 
+  border-radius: 15px !important;
+  border: 1px solid #e9ecef !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.job-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1) !important;
+  border-color: #0d6efd !important;
+}
+
+.job-card .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.job-card .job-title-link {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s;
+}
+
+.job-card .job-title-link:hover {
+  color: #0d6efd;
+}
+
+.job-card .company-name {
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.job-meta-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; 
+}
+
+.job-meta-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #343a40; 
+}
+
+.job-meta-item i {
+  margin-right: 0.5rem;
+  color: #6c757d;
+}
+
+.job-card .job-description {
+  flex-grow: 1; 
+  color: #495057;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.job-card .btn-primary {
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem; 
+}
+
+.pagination .page-link {
+  border-radius: 50px !important;
+  margin: 0 5px;
+  border: none;
+  color: #6c757d;
+  transition: all 0.2s;
+}
+
+.pagination .page-link:hover {
+  background-color: #e9ecef;
+  color: #0d6efd;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #0d6efd;
+  color: white;
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+}

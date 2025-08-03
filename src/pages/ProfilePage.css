@@ -1,0 +1,84 @@
+
+.profile-page-container {
+  background-color: #f4f7f6;
+}
+
+.profile-header {
+  background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 74%);
+  color: white;
+  padding: 3rem 1rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #6f42c1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: white;
+  flex-shrink: 0; /* Prevents the avatar from shrinking */
+}
+
+.profile-info h1 {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.profile-info .badge {
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+}
+
+.profile-form-card {
+  border-radius: 15px !important;
+  border: none !important;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08) !important;
+}
+
+.profile-form-card .form-label {
+  font-weight: 500;
+  color: #495057;
+}
+
+/* --- New Input Box Styling --- */
+.profile-form-card .form-control {
+  border-radius: 10px;
+  border: 1px solid #e0e5ec;
+  background-color: #f0f3f8; /* A very light, soft background */
+  box-shadow: inset 2px 2px 5px #d1d9e6, inset -2px -2px 5px #ffffff;
+  transition: all 0.2s ease-in-out;
+  padding: 0.75rem 1rem;
+}
+
+.profile-form-card .form-control:focus {
+  border-color: #6f42c1; /* A nice purple for focus */
+  box-shadow: 0 0 0 0.25rem rgba(111, 66, 193, 0.2);
+  background-color: #fff; /* Brighten on focus */
+}
+
+.profile-form-card .form-control:disabled {
+  background-color: #e9ecef;
+  box-shadow: none;
+}
+
+.update-btn {
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.update-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}

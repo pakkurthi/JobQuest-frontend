@@ -1,0 +1,136 @@
+
+.register-page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(-45deg, #20c997, #6610f2, #007bff, #fd7e14);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  overflow: hidden;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.register-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.8s ease-out forwards;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.register-card .card-header {
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.register-card .card-title {
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+
+.register-card .form-label {
+  color: #f8f9fa;
+  font-weight: 500;
+}
+
+.register-card .form-control,
+.register-card .form-select {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.register-card .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.register-card .form-control:focus,
+.register-card .form-select:focus {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: none;
+  color: #fff;
+}
+
+.register-card .form-select option {
+  background: #343a40;
+  color: #fff;
+}
+
+.register-card .form-check-input {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.register-card .form-check-input:checked {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.register-card .form-check-label {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.register-card .form-check-label a {
+  color: #fff;
+  font-weight: 600;
+}
+
+.register-btn {
+  background: linear-gradient(45deg, #28a745, #20c997);
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 0.75rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.register-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.bottom-link p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.bottom-link a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: text-shadow 0.2s;
+}
+
+.bottom-link a:hover {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
